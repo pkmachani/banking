@@ -1,10 +1,11 @@
 package service
 
 import (
+	"time"
+
+	"github.com/ashishjuyal/banking-lib/errs"
 	"github.com/ashishjuyal/banking/domain"
 	"github.com/ashishjuyal/banking/dto"
-	"github.com/ashishjuyal/banking-lib/errs"
-	"time"
 )
 
 const dbTSLayout = "2006-01-02 15:04:05"

@@ -9,5 +9,6 @@ require (
 	github.com/golang/mock v1.4.4
 	github.com/gorilla/mux v1.8.0
 	github.com/jmoiron/sqlx v1.2.0
+	go.uber.org/mock v0.4.0 // indirect
 	go.uber.org/multierr v1.6.0 // indirect
 )

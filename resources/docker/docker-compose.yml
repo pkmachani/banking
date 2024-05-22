@@ -1,7 +1,7 @@
-version: '3'
 services:
   mysql:
-    image: mysql:5.6.27
+    image: mysql:8.4.0
+    restart: always
     ports:
       - "127.0.0.1:3306:3306"
     volumes:
@@ -10,7 +10,7 @@ services:
     container_name: mysql
     environment:
       MYSQL_ROOT_PASSWORD: codecamp
-      TZ: Asia/Kolkata
+      TZ: Canada/Eastern
 
 volumes:
   mysqldata:
