@@ -35,12 +35,12 @@ CREATE TABLE `customers` (
 LOCK TABLES `customers` WRITE;
 /*!40000 ALTER TABLE `customers` DISABLE KEYS */;
 INSERT INTO `customers` VALUES 
-	(2000,'Steve','1978-12-15','Delhi','110075',1),
-	(2001,'Arian','1988-05-21','Newburgh, NY','12550',1),
-	(2002,'Hadley','1988-04-30','Englewood, NJ','07631',1),
-	(2003,'Ben','1988-01-04','Manchester, NH','03102',0),
-	(2004,'Nina','1988-05-14','Clarkston, MI','48348',1),
-	(2005,'Osman','1988-11-08','Hyattsville, MD','20782',0);
+	(2000,'Pavan','1978-12-15','Scarborough, CA','M1K2W7',1),
+	(2001,'Divya','1988-05-21','Scarborough, CA','M1K2W7',1),
+	(2002,'Gubbi','1988-04-30','Scarborough, CA','M1K2P1',1),
+	(2003,'Ramesh','1988-01-04','Scarborough, CA','M1K2P1',0),
+	(2004,'Chethan','1988-05-14','Bangalore, IN','560021',1),
+	(2005,'Prashanth','1988-11-08','Mysore, IN','654025',0);
 
 
 UNLOCK TABLES;
@@ -66,10 +66,11 @@ CREATE TABLE `accounts` (
 LOCK TABLES `accounts` WRITE;
 /*!40000 ALTER TABLE `accounts` DISABLE KEYS */;
 INSERT INTO `accounts` VALUES 
-	(95470,2000,'2020-08-22 10:20:06', 'saving', 6823.23, 1),
-	(95471,2002,'2020-08-09 10:27:22', 'checking', 3342.96, 1),
-  (95472,2001,'2020-08-09 10:35:22', 'saving', 7000, 1),
-  (95473,2001,'2020-08-09 10:38:22', 'saving', 5861.86, 1);
+	(95470,2000,'2023-08-22 10:20:06', 'saving', 6823.23, 1),
+	(95471,2002,'2023-08-09 10:27:22', 'checking', 3342.96, 1),
+  (95472,2001,'2023-08-09 10:35:22', 'saving', 7000, 1),
+  (95473,2001,'2023-08-09 10:38:22', 'saving', 5861.86, 1);
+  (95473,2004,'2023-08-09 10:38:22', 'saving', 5861.86, 1);
 /*!40000 ALTER TABLE `accounts` ENABLE KEYS */;
 
 UNLOCK TABLES;
@@ -107,8 +108,10 @@ LOCK TABLES `users` WRITE;
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
 INSERT INTO `users` VALUES 
   ('admin','abc123','admin', NULL, '2020-08-09 10:27:22'),
-  ('2001','abc123','user', 2001, '2020-08-09 10:27:22'),
-  ('2000','abc123','user', 2000, '2020-08-09 10:27:22');
+  ('2001','abc123','user', 2001, '2023-08-09 10:27:22'),
+  ('2000','abc123','user', 2000, '2023-08-09 10:27:22');
+  ('2002','abc123','user', 2002, '2023-08-09 10:27:22'),
+  ('2004','abc123','user', 2004, '2023-08-09 10:27:22'),
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 
 UNLOCK TABLES;
